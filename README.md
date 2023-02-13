@@ -7,6 +7,6 @@
 ## Algorithms
 
 - Sort Algorithms
-  -- [Bubble Sort](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Sort_Algorithms/Bubble_Sort.ts)
+- - [Bubble Sort](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Sort_Algorithms/Bubble_Sort.ts)
 - [Stack](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Stack.ts)
 - [Monotonic Stack](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/MonotonicStack.ts)
