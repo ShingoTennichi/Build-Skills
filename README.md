@@ -4,6 +4,6 @@
 
 # Contents
 ### Algorithms
-- [Stack]()
-- [Monotonic Stack]()
+- [Stack](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Stack.ts)
+- [Monotonic Stack](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/MonotonicStack.ts)
 
