@@ -3,7 +3,10 @@
 ![How I study](https://media.tenor.com/tOoW-TVnlhUAAAAC/cat-typing.gif)
 
 # Contents
-### Algorithms
+
+## Algorithms
+
+- Sort Algorithms
+  -- [Bubble Sort](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Sort_Algorithms/Bubble_Sort.ts)
 - [Stack](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Stack.ts)
 - [Monotonic Stack](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/MonotonicStack.ts)
-
