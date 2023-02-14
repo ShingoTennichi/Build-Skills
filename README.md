@@ -5,8 +5,8 @@
 # Contents
 
 ## Data Structure
-- [Linked List](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Data_Structure/LinkedList.ts)
-- [Stack](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Data_Structure/Stack.ts)
+- [Linked List](https://github.com/ShingoTennichi/Build-Skills/blob/main/Data_Structure/LinkedList.ts)
+- [Stack](https://github.com/ShingoTennichi/Build-Skills/blob/main/Data_Structure/Stack.ts)
 
 ## Algorithms
 
