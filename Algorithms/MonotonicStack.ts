@@ -5,9 +5,11 @@ import { Stack } from "../Data_Structure/Stack";
 //TODO: find index of first higher number on the right by O(n) solution;
 //? if there is no higher number, -1 is stored;
 
-const targetArr: number[] = [2, 1, 4, 5, 7, 4, 3, 2, 1, 4, 6, 4, 9, 6, 6, 3];
+const targetArr: Array<number> = [
+  2, 1, 4, 5, 7, 4, 3, 2, 1, 4, 6, 4, 9, 6, 6, 3,
+];
 
-const indexOfHigherNumber: number[] = new Array(targetArr.length).fill(-1);
+const indexOfHigherNumber: Array<number> = new Array(targetArr.length).fill(-1);
 const stack: Stack = new Stack();
 for (let i = 0; i < targetArr.length; i++) {
   if (!stack.size() || targetArr[stack.top()] > targetArr[i]) {

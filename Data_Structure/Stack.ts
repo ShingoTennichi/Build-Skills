@@ -5,7 +5,7 @@
  * @returns { Object } Stack
  */
 export class Stack {
-  private stack: number[];
+  private stack: Array<number>;
   constructor() {
     this.stack = new Array(0);
   }

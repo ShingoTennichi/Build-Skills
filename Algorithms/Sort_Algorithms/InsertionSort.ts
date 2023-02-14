@@ -1,5 +1,5 @@
-//* runtime: 0(n^2);
-//* space complexity: 0(1);
+//* runtime: O(n^2);
+//* space complexity: O(1);
 
 /**
  * @returns { Object } InsertionSort
@@ -8,10 +8,10 @@ export default class InsertionSort {
   constructor() {}
 
   /**
-   * @param { number[] } nums - an array to sort its elements
+   * @param { Array<number> } nums - an array to sort its elements
    * @returns { void } in-place sort
    */
-  public static sort(nums: number[]): void {
+  public static sort(nums: Array<number>): void {
     for (let i = 1; i < nums.length; i++) {
       const target: number = nums[i];
       let j: number = i - 1;

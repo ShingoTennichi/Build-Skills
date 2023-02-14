@@ -24,7 +24,7 @@ export default class LinkedList {
     console.log(arr);
   }
 
-  public static createNewList(arr: number[]): LinkedList {
+  public static createNewList(arr: Array<number>): LinkedList {
     if (arr.length === 0) return new LinkedList();
     const root: LinkedList = new LinkedList(arr[0]);
     let curNode: LinkedList | null = root;

@@ -1,6 +1,6 @@
 export default class Queue {
-  private queue: number[];
-  
+  private queue: Array<number>;
+
   constructor() {
     this.queue = new Array(0);
   }
