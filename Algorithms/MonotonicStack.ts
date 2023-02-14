@@ -1,4 +1,4 @@
-import { Stack } from "./Stack";
+import { Stack } from "../Data_Structure/Stack";
 
 //* Monotonic Stack is a technique to track the difference between two data
 
