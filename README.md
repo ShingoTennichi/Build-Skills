@@ -18,3 +18,4 @@
   - [Quick Sort](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Sort_Algorithms/QuickSort.ts)
   - [Selection Sort](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Sort_Algorithms/SelectionSort.ts)
 - [Monotonic Stack](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/MonotonicStack.ts)
+- [Prefix Sum](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/PrefixSum.ts)
