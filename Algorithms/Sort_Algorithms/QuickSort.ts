@@ -1,3 +1,6 @@
+//* runtime: O(n log n)
+//* space complexity: O(log n)
+
 /**
  * @returns { Object } `QuickSort`
  */
