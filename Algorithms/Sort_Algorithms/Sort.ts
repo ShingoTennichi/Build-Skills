@@ -14,7 +14,7 @@ console.log("An array is generated:");
 console.log(JSON.stringify(nums));
 console.log("========================================");
 
-console.time();
+console.time("Sort time: ");
 console.log("Sort begins...");
 // BubbleSort.sort(nums);
 // InsertionSort.sort(nums);
@@ -22,7 +22,7 @@ console.log("Sort begins...");
 // console.log(MergeSort.sort(nums)); // not-in-place sort
 QuickSort.sort(nums); // in-place sort
 console.log(JSON.stringify(nums));
-console.log("Sort done in:");
-console.timeEnd();
+console.log("Sort done");
+console.timeEnd("Sort time: ");
 
 Debugger.sortDebug(copy, nums);
