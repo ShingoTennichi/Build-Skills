@@ -1,4 +1,4 @@
-//* runtime: O(n log n)
+//* runtime: O(n log n), worst case(O^2)
 //* space complexity: O(log n)
 
 /**

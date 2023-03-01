@@ -3,7 +3,9 @@
 ![How I study](https://media.tenor.com/tOoW-TVnlhUAAAAC/cat-typing.gif)
 
 # Contents
+
 ## Data Structure
+
 - [Linked List](https://github.com/ShingoTennichi/Build-Skills/blob/main/Data_Structure/LinkedList.ts)
 - [Stack](https://github.com/ShingoTennichi/Build-Skills/blob/main/Data_Structure/Stack.ts)
 - [Queue](https://github.com/ShingoTennichi/Build-Skills/blob/main/Data_Structure/Queue.ts)
@@ -20,4 +22,5 @@
 - [Prefix Sum](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/PrefixSum.ts)
 
 ## Binary Operators
+
 - [Bitwise Operations](https://github.com/ShingoTennichi/Build-Skills/blob/main/Binary_Operations/BitwiseOperators.ts)
