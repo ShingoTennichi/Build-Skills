@@ -14,6 +14,7 @@
 
 - Sort Algorithms
   - [Bubble Sort](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Sort_Algorithms/BubbleSort.ts)
+  - [Counting Sort](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Sort_Algorithms/CountingleSort.ts)
   - [Heap Sort](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Sort_Algorithms/HeapSort.ts)
   - [Insertion Sort](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Sort_Algorithms/InsertionSort.ts)
   - [Merge Sort](https://github.com/ShingoTennichi/Build-Skills/blob/main/Algorithms/Sort_Algorithms/MergeSort.ts)
