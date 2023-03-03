@@ -5,7 +5,7 @@
 export default class HeapSort {
   constructor() {}
 
-  public static sort(nums: Array<number>) {
+  public static sort(nums: Array<number>): void {
     let length: number = nums.length;
     // make heap structure
     for (let i = Math.floor(length / 2); i >= 0; i--) {
