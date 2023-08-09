@@ -1,6 +1,6 @@
 # Docker Commands
 
-```
+```zsh
 <!-- see running containers : ps ⇒ process status -->
 docker ps
 
@@ -28,7 +28,7 @@ docker container rm <Container Name i.e.: 034a>
 OS によって使えるシェル違う
 デタッチモード==> ランはされている。MacOS で制御
 
-```
+```zsh
 docker run -d nginx
 ```
 
@@ -36,7 +36,7 @@ docker run -d nginx
 
 Options
 
-```
+```zsh
 <!-- -detach mode — Just run the container and then detach from it -->
 -d
 
