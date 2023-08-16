@@ -53,11 +53,39 @@ docker run -d nginx
 -p <port:port>
 ```
 
-### Note
+## docker-compose
+```sh
 
-OS によって使えるシェル違う
--d デタッチモード==> ランはされている。MacOS で制御
-root@36756b036962:/etc/nginx/conf.d# cat default.conf ⇒ 設定ファイル
-変更したら表示されなくなる ↓
-root@36756b036962:/usr/share/nginx/html# mv index.html newIndex.html
-root@36756b036962:/usr/share/nginx/html# mv newIndex.html index.html
+# build images(run `docker images` to check)
+docker-compose build --no-cache # --no-cache force to rebuild images
+
+# run containers as detached mode
+docker-compose up -d
+
+# stop containers
+docker-compose down
+
+# completely delete directories and files from local
+docker-compose down --rmi all --remove-orphans -v
+
+# create next app at the same time as the container starts
+docker-compose run --rm frontend sh -c 'npx create-next-app@latest'
+```
+## flags
+```sh
+-c
+-d # detached mode(background)
+-it # shorthand for -i (--interactive) and -t (--tty)
+-p <local port>:<container port> # port
+--name <name> #
+--rm #
+```
+### Note
+shell
+
+## nginx
+<!-- nginx config file -->
+root@36756b036962:/etc/nginx/conf.d
+<!-- 変更したら表示されなくなる ↓ -->
+root@36756b036962:/usr/share/nginx/html # mv index.html newIndex.html
+root@36756b036962:/usr/share/nginx/html # mv newIndex.html index.html

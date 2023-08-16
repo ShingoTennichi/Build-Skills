@@ -1,0 +1,24 @@
+# check docker hub
+version: "3.8"
+services:
+  frontend: # arbitray name
+    build: # build Dockerfile
+      context: ./setting/frontend # path of the terget docker file
+    ports:
+        - 3030:3000 # <local port>:<container port>
+    volumes: # sync directory to container
+      - ./frontend:/app # <local directory path>:<container directory path>
+    command: bash -c "npm run dev" # will be executed after built
+    environment: # environment variable
+      - WATCHPACK_POLLING=true # envitonment　いるかわからん　nodemon的なやつ?
+  db:
+    image: mysql:8.0 # check docker hub
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    volumes:
+      - ninninonamae:/var/lib/mysql #<name>: <path for saving data>
+volumes:
+  ninninonamae: {}
