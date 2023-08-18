@@ -20,5 +20,37 @@ services:
       MYSQL_PASSWORD: root
     volumes:
       - ninninonamae:/var/lib/mysql #<name>: <path for saving data>
+  wordpress:
+    image: wordpress
+    ports:
+      - "8089:80"
+    depends_on: # starts after the specified container
+      - mysql # <servise name>
+    environment:
+      WORD_PRESS_DB_HOST: mysql
+      WORD_PRESS_DB_USER: root
+      WORD_PRESS_DB_PASSWORD: "coffee"
+      WORD_PRESS_DB_NAME: wordpress
+    networks: #
+      ohyeah: # <arbitray naem>
+        ipv4_address: "192.168.92.25" # <arbitray ip address>
+
+  mysql:
+    image: "mysql"
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_ROOT_PASSWORD: "coffee"
+    volumes:
+      - ./mysql:/var/lib/mysql
+    networks:
+      ohyeah:
+        ipv4_address: "192.168.92.26"
+networks:
+  ohyeah:
+    ipam:
+      driver: default 
+      config:
+        - subnet: "192.168.92.0/24"
+
 volumes:
   ninninonamae: {}
