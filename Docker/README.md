@@ -1,5 +1,8 @@
 # Docker Commands
 
+## Official Documents and Samples
+[docker-compose.yaml sample repository](https://github.com/docker/awesome-compose)
+[docker run command](https://docs.docker.com/engine/reference/run/)
 ## Setups
 
 ```sh
@@ -30,6 +33,9 @@ docker exec -it <Container ID> bash
 
 # remove a container
 docker container rm <Container ID i.e.: 034a>
+
+# remove image
+docker rmi <image name || image id>
 ```
 
 
@@ -38,15 +44,19 @@ docker container rm <Container ID i.e.: 034a>
 docker run -d nginx
 ```
 
-/etc/os-release ⇒ OS の種類調べるときに見にいく
-
 ## Options
 
-```zsh
-# -detach mode — Just run the container and then detach from it
+```sh
+# -detached mode — Just run the container and then detach from it
 -d
 
-# -interactive + -tty —  It takes me straight inside the container.
+# -interactive + It takes me straight inside the container.
+-i
+
+# --tty(teletype) which is referred to terminal these days
+-t
+
+# usually -i and -t are used together to directly enter container's terminal
 -it
 
 # port
@@ -81,11 +91,12 @@ docker-compose run --rm frontend sh -c 'npx create-next-app@latest'
 --rm #
 ```
 ### Note
-shell
+<!-- the location of the file that contains OS info -->
+/etc/os-release
 
 ## nginx
-<!-- nginx config file -->
+<!-- the location of nginx config file -->
 root@36756b036962:/etc/nginx/conf.d
-<!-- 変更したら表示されなくなる ↓ -->
+<!-- as default, nginx reads index.html file in the directory ↓ -->
 root@36756b036962:/usr/share/nginx/html # mv index.html newIndex.html
 root@36756b036962:/usr/share/nginx/html # mv newIndex.html index.html

@@ -19,7 +19,7 @@ services:
       MYSQL_USER: root
       MYSQL_PASSWORD: root
     volumes:
-      - ninninonamae:/var/lib/mysql #<name>: <path for saving data>
+      - arbitrayName:/var/lib/mysql #<name>: <path for saving data>
   wordpress:
     image: wordpress
     ports:
