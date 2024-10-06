@@ -1,4 +1,4 @@
-# CleanCode
+# Clean Code
 
 ## JavaScript / TypeScript
 
