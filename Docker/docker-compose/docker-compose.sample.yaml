@@ -3,9 +3,9 @@ version: "3.8"
 services:
   frontend: # arbitray name
     build: # build Dockerfile
-      context: ./setting/frontend # path of the terget docker file
+      context: ./Docker/frontend # path of the terget docker file
     ports:
-        - 3030:3000 # <local port>:<container port>
+        - 3000:3000 # <local port>:<container port>
     volumes: # sync directory to container
       - ./frontend:/app # <local directory path>:<container directory path>
     command: bash -c "npm run dev" # will be executed after built
@@ -48,7 +48,7 @@ services:
 networks:
   ohyeah:
     ipam:
-      driver: default 
+      driver: default
       config:
         - subnet: "192.168.92.0/24"
 

@@ -1,0 +1,88 @@
+version: "3"
+services:
+  frontend:
+    image: nginx:latest
+    build:
+      context: ./Docker/frontend
+    ports:
+      - 3000:3000
+    depends_on:
+      - database
+    volumes:
+      - ./frontend:/app
+    cap_add:
+      - NET_ADMIN
+    restart: always
+    networks:
+      frontend:
+        ipv4_address: 10.0.0.2
+  backend:
+    image: nginx:latest
+    networks:
+      backend:
+        ipv4_address: 10.0.1.2
+  database:
+    image: mysql:latest
+    depends_on:
+      - database
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    volumes:
+      - mysql:/var/lib/mysql
+    networks:
+      database:
+        ipv4_address: 10.0.2.2
+  gateway:
+    image: nginx:latest
+    networks:
+      frontend:
+        ipv4_address: 10.0.0.100
+      backend:
+        ipv4_address: 10.0.1.100
+      database:
+        ipv4_address: 10.0.2.100
+
+networks:
+  frontend:
+    # default network name is <directory name>_<network name>
+    name: frontend
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.0.0.0/24
+          gateway: 10.0.0.254 # default gateway
+  backend:
+    name: backend
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.0.1.0/24
+          gateway: 10.0.1.254
+  database:
+    name: database
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.0.2.0/24
+          gateway: 10.0.2.254
+
+
+# sample
+# networks:
+#   mynet1:
+#     ipam:
+#     driver: default
+#     config:
+#       - subnet: 172.28.0.0/16
+#         ip_range: 172.28.5.0/24
+#         gateway: 172.28.5.254
+#         aux_addresses:
+#           host1: 172.28.1.5
+#           host2: 172.28.1.6
+#           host3: 172.28.1.7
+#     options:
+#       foo: bar
+#       baz: "0"
