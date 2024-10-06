@@ -1,6 +1,12 @@
 # Git
 
 ```zsh
+# initialize git in the current directory
+git init
+
+# define the origin repository that connects to the local directory
+git remote add origin main
+
 # check the difference between local and staged files
 git status
 
@@ -53,21 +59,19 @@ git stash clear
 
 git amend -m “comment” ➡️ change a comment just I committed
 
-git merge Branch_Name ➡️ merge branches
+git fetch
+git merge <branch_name>
+git pull <Branch Name>
 
-git branch ➡️ show all branch names
-git branch <Name> ➡️ create new branch
-git branch -d <local-branch> ➡️ delete the local branch
-git branch -m New_name ➡️ change branch name
-git branch -vv ➡️ show origin branch?
+# show all branch names
+git branch
+# create new branch
+git branch <new_branch_name>
+# delete a local branch
+git branch -d <local-branch>
 
-git remote add origin main ➡️ only first time?
-
-git fetch? ➡️
-
-git pull <Branch Name> ➡️
-
-git clone URL
+# download a repo from github
+git clone <git_repo_url>
 
 git rebase -i <hash>
 
