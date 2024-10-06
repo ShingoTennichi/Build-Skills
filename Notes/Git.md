@@ -1,6 +1,6 @@
 # Git
 
-```sh
+```zsh
 # check the difference between local and staged files
 git status
 
