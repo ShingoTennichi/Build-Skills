@@ -1,7 +1,7 @@
 # Git
 
 ```sh
-git git add File_Name—add to stage_index
+git add File_Name—add to stage_index
 git add . —add to stage_index
 git rm Deleted_File_Name—add to stage_index
 git rm --cached -r .DS_Store—delete a cashed file
